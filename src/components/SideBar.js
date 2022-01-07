@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import image from '../assets/images/logo-DH.png';
+import {Link} from 'react-router-dom';
 
 function SideBar(){
     return(
@@ -31,50 +31,26 @@ function SideBar(){
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
 
-                {/*<!-- Nav Item - Pages -->*/}
+                {/*<!-- Nav Item - GenresInDb -->*/}
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="/">
+                    <Link className="nav-link collapsed" to="/GenresInDb">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Pages</span>
-                    </a>
+                        <span>Genres In Db</span>
+                    </Link>
                 </li>
 
-                {/*<!-- Nav Item - Charts -->*/}
+                {/*<!-- Nav Item - LastMovieInDb -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/LastMovieInDb">
                         <i className="fas fa-fw fa-chart-area"></i>
-                        <span>Charts</span></a>
-                </li>
-
-                {/*<!-- Nav Item - Tables -->*/}
-                <li className="nav-item">
-                    <a className="nav-link" href="/">
-                        <i className="fas fa-fw fa-table"></i>
-                        <span>Tables</span></a>
-                </li>
-
-                {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider d-none d-md-block"/>
-
-                {/*<!-- Nav Item - GenresInDB -->*/}
-                <li className="nav-item">
-                    <Link className="nav-link" to="/GenresInDB">
-                        <i className="fas fa-fw fa-table"></i>
-                        <span>Genres</span></Link>
-                </li>
-
-                {/*<!-- Nav Item - LastMovieInDB -->*/}
-                <li className="nav-item">
-                    <Link className="nav-link" to="/LastMovieInDB">
-                        <i className="fas fa-fw fa-table"></i>
-                        <span>Last Movie</span></Link>
+                        <span>Last Movie In Db</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - ContentRowMovies -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/ContentRowMovies">
                         <i className="fas fa-fw fa-table"></i>
-                        <span>Movies</span></Link>
+                        <span>Content Row Movies</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
